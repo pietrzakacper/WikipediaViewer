@@ -1,5 +1,6 @@
 function showResults(response) {
     $(".result-container").empty();
+      $(".result-container").append('<hr></hr>');
     $.each(response[1], function(i, item) {
         $(".result-container").append(
             '<a href="' + response[3][i] + '" target="_blank"><div class="result-item">' + "<strong><p>" + item + "</p></strong>" + "<div>" + response[2][i] + "</div>" + "</div></a>"

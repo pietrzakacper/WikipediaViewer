@@ -3,10 +3,11 @@ form > input{
  width: 50%;
  -webkit-transition: width 0.4s ease-in-out;
  transition: width 0.4s ease-in-out;
+   border-width: 0px;
 }
 
 form > input:focus{
-  outline: 3px solid #555;
+  border: 3px solid #555;
   width: 100%;
 }
 

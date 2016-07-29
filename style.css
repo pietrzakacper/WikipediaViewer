@@ -26,6 +26,7 @@ html body{
 a, a:visited, a:hover, a:active {
   text-decoration: none !important;
   outline: none !important;
+  border: none !important;
 }
 
 .separator{
@@ -51,9 +52,8 @@ a, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 
-.random-art:visited, .random-art:hover, .random-art:active{
-  outline: none !important;
-  text-decoration: none !important;
+.random-art:focus{
+  outline: none;
 }
 
 hr {

@@ -36,6 +36,7 @@ a, a:visited, a:hover, a:active {
   border: none;
   height: 50px auto;
   padding-top: 15px;
+  padding-bottom: 15px;
   margin: auto;
   align-self: center;
   width: 50%;

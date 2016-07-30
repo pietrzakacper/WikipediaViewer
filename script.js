@@ -3,8 +3,9 @@ function showResults(response) {
       $(".result-container").append('<hr></hr>');
     $.each(response[1], function(i, item) {
         $(".result-container").append(
-            '<a href="' + response[3][i] + '" target="_blank"><div class="result-item">' + "<strong><p>" + item + "</p></strong>" + "<div>" + response[2][i] + "</div>" + "</div></a>"
+            '<a href="' + response[3][i] + '" target="_blank"><div class="result-item hidden">' + "<strong><p>" + item + "</p></strong>" + "<div>" + response[2][i] + "</div>" + "</div></a>"
         );
+        $(".result-item:last").fadeIn(i*200).toggleClass("hidden");
     });
 }
 
